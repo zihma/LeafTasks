@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:"><title>一叶清单</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><span class="brandmark" aria-hidden="true"><i></i></span><strong>一叶清单</strong><button id="manage" aria-label="管理清单">···</button></header>
+<section class="hero"><h1 id="heading"></h1><p id="today"></p></section>
+<nav id="tabs" aria-label="切换清单"></nav>
+<div class="section"><div class="stats"><span id="stats"></span><progress id="meter" value="0" max="1" aria-label="清单完成进度"></progress></div><button id="sort" class="quiet"></button></div>
+<div id="pending"></div><details id="finished"><summary id="doneCount"></summary><div id="done"></div></details>
+<button id="add" class="fab"><span>添加任务</span><b aria-hidden="true">＋</b></button>
+</main><div id="shade" hidden><article role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><div id="dialog"></div></article></div><div role="status" id="toast" hidden></div><script src="app.js"></script></body></html>

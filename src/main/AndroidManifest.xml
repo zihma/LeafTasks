@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.leaftasks.app">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="34"/>
+    <application android:label="一叶清单" android:allowBackup="false" android:icon="@drawable/leaf" android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustResize" android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity>
+    </application>
+</manifest>
